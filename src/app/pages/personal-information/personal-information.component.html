@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>Main Information:</h1>
+    <table class="table table-hover">
+
+       <tr>
+        <th scope="row">Name</th>
+        <td>{{ name }}</td>
+       </tr>
+       <tr>
+        <th>Surname</th>
+        <td>{{ secondName}}</td>
+       </tr>
+
+       <tr>
+        <th>Date of Birth</th>
+        <td>{{ dateBirth }}</td>
+       </tr>
+       <tr>
+        <th>City</th>
+        <td>{{ city }}</td>
+       </tr>
+       <tr>
+        <th>Contact Number</th>
+        <td>{{ number }}</td>
+       </tr>
+
+
+
+    </table>
+   <br><br>
+
+
+
+    <button  type="button" class="btn btn-success" ><a [routerLink]="['/', 'knowledge']" >Studies Section</a></button>
+</div>
+
+
