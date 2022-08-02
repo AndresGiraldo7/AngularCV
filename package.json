@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build",
+    "build": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
     "heroku-postbuild": "ng build"
     
   },
@@ -35,6 +37,7 @@
     "@angular/cli": "~14.1.0",
     "@angular/compiler-cli": "^14.1.0",
     "@types/jasmine": "~4.0.0",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
