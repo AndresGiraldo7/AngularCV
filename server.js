@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('./dist/curriculum-vitae'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/curriculum-vitae/index.html'}),
+    res.sendFile('index.html', {root: 'dist/curriculum-vitae/index.html' }, {root: 'dist/curriculum-vitae/src/app/pages/family-reference/family-reference.component.html'})
 );
 
 // Start the app by listening on the default Heroku port
