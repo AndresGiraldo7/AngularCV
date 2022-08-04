@@ -11,13 +11,15 @@ app.get('/*', (req, res) =>
     res.sendFile('index.html', {root: 'dist/curriculum-vitae/index.html' })
 );
 
+
+
 app.get('/*', (req, res) =>
     res.sendFile('index.html', {root: 'dist/curriculum-vitae/family-reference.component.html' })
 );
 
 
 app.get('/*', (req, res) =>
-    res.sendFile('family-reference', {root: 'dist/curriculum-vitae/family-reference.component.html' })
+    res.sendFile('family-reference.component.html', {root: 'dist/curriculum-vitae/family-reference.component.html' })
 );
 
 app.get('/*', (req, res) =>
