@@ -13,7 +13,7 @@ app.get('/*', (req, res) =>
 
 
 app.get('/*', (req, res) =>
-    res.sendFile(path.resolve('./src/app/pages/family-reference'))
+    res.sendFile(path.resolve('/src/app/pages/family-reference'))
 );
 
 // Start the app by listening on the default Heroku port
