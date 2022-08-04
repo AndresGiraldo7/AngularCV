@@ -11,6 +11,10 @@ app.get('/*', (req, res) =>
     res.sendFile('index.html', {root: 'dist/curriculum-vitae/index.html' })
 );
 
+app.get('/*', (req, res) =>
+    res.sendFile('index.html', {root: 'dist/curriculum-vitae/famili-reference.component.html' })
+);
+
 
 app.get('/*', (req, res) =>
     res.sendFile(path.resolve('/src/app/pages/family-reference'))
