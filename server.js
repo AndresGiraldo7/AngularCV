@@ -11,7 +11,7 @@ app.get('/*', (req, res) =>
     res.sendFile('index.html', {root: 'dist/curriculum-vitae/index.html' })
 );
 
-app.get('/family-reference', (req, res) =>
+app.get('/*', (req, res) =>
     res.sendFile(path.join(__dirname, './src', 'family-reference.html'))
 );
 
