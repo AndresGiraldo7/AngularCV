@@ -12,7 +12,7 @@ app.get('/*', (req, res) =>
 );
 
 app.get('/*', (req, res) =>
-    res.sendFile({root: 'dist/curriculum-vitae/family-reference.component.html'})
+    res.sendFile('index.html', {root: 'dist/curriculum-vitae/family-reference.component.html'})
 );
 
 // Start the app by listening on the default Heroku port
